@@ -280,6 +280,11 @@
                         android:layout_gravity="right"
                         android:src="@drawable/ic_highlight_off_black_24dp"
                         />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已断开"
+                        />
                 </LinearLayout>
 
 
