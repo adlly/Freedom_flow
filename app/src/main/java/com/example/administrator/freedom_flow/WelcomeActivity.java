@@ -6,15 +6,19 @@ import android.os.Bundle;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 public class WelcomeActivity extends AppCompatActivity {
     ImageView welcome_image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.start_activity);
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
 
         welcome_image = (ImageView) findViewById(R.id.welcome_image);
         //实现开机动画
@@ -35,7 +39,6 @@ public class WelcomeActivity extends AppCompatActivity {
         @Override
         public void onAnimationEnd(Animation animation) {
             skip();
-
         }
 
         @Override
@@ -44,7 +47,9 @@ public class WelcomeActivity extends AppCompatActivity {
         }
     }
     private void skip(){
+
         startActivity(new Intent(this,MainActivity.class));
+
     }
 
 

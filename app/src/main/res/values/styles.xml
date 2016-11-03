@@ -11,8 +11,19 @@
     <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="windowNoTitle">true</item>
-        <!--设置全屏 去掉状态栏  statusbar-->
-        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <!--设置全屏 去掉状态栏  statusbar
+        下面这行是全屏的去掉 状态栏的 (system ui  / statusbar)
+        -->
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--新建主题 继承父主题-->
+    <style name="NoActionBarTheme" parent="AppTheme.NoActionBar">
+
     </style>
 
 </resources>
